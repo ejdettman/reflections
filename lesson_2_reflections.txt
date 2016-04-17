@@ -8,14 +8,22 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+- only add files changed associated with logical change
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+- When you want to make new versions of or add experimental changes and keep the original working version separate.
+
 
 How do the diagrams help you visualize the branch structure?
+- You see that this is a graph and can track history of each node through their parents. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+- You merge the appropriate changes based on whether they were added or deleted from their common ancestor. We represent it as having two parents because it tries to combine changes from both. I still think that this could easily lead to code problems. 
 
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+-pros - lets the user edit conflicts rather than introducing conflicts that may make project not work
+- cons - takes time to resolve the merges
